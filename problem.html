@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+      <title>问题管理</title>
+    </head>
+    <style>
+
+	   body{
+	   	 font-size: 13px;
+	   	 margin: 0;
+	   	 padding: 0;
+	   }
+	   h3{
+	   	background-color: #abc;
+	   	padding: 10px;
+	   }
+
+	   input{
+	   	vertical-align: middle;
+	   	width: 168px;
+	   	height: 100%;
+	   	margin: 0px;
+	   }
+
+	    select{
+	   	width: 172px;
+	   }
+
+	   textarea{
+	   	width: 400px;
+	   }
+       
+       td{
+       	height: 21px;
+	   	line-height: 21px;
+       }
+
+	   td:first-child{
+	   	text-align: right;
+	   	vertical-align:top;
+	   	max-width:100px;
+	   }
+	   td.f-c{
+	   	text-align: left;
+	   }
+
+	   tr{
+	   	margin-top: 16px;
+	   }
+      
+      button{
+      	margin: 0 auto;
+      	display: block;
+      	width: 100px;	
+      }
+    </style>
+    <body>
+    <h3>项目管理/问题管理</h3>
+    <form action="" id="manager">
+       <table>
+       	 <tr>
+	       	<td>问题名称：</td>
+		    <td><input type="text" ></td>
+	     </tr>
+	     <tr>
+	     	<td>问题编码：</td>
+	     	<td><input type="text"></td>
+	     </tr>
+	     <tr>
+	     	<td>问题分类：</td>
+	     	<td>
+	     		<select name="list" id="">
+	     			<option value="0">质量管理</option>
+	     			<option value="1">范围管理</option>
+	     			<option value="2">资源管理</option>
+	     		</select>
+	     	</td>
+	     </tr>
+	     <tr>
+	     	<td>问题概要：</td>
+	     	<td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+	     </tr>
+	     <tr>
+	     	<td>问题影响：</td>
+	     	<td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+	     </tr>
+	     <tr>
+	     	<td class="f-c">问题解决方法与措施：</td>
+	     	<td>
+	     		<textarea name="" id="" cols="30" rows="10" placeholder="指计划的解决该风险的方法，措施和步骤"></textarea>
+	     	</td>
+	     </tr>
+	     <tr>
+	     	<td>对应风险编号</td>
+	     	<td>
+	     		<input type="text">
+	     	</td>
+	     </tr>
+	     <tr>
+	     	<td>优先级：</td>
+	     	<td>
+	     		<select name="" id="Priority">
+	     			<option value="0">低</option>
+	     			<option value="1">中</option>
+	     			<option value="2">高</option>
+	     		</select>
+	     	</td>
+	     </tr>
+	     <tr>
+	     	<td>提出人：</td>
+	     	<td><input type="text"></td>
+	     </tr> 
+	     <tr>
+	     	<td>责任人：</td>
+	     	<td><input type="text"></td>
+	     </tr>
+	     <tr>
+	     	<td>问题解决日期：</td>
+	     	<td><input type="date"></td>
+	     </tr>
+	     <tr>
+	     	<td class="f-c">问题监控及进展：</td>
+	     	<td>
+	     		<textarea name="" id="" cols="30" rows="10" placeholder="指监督风险的发展情况，目前进展，实际的解决方法，措施和步骤"></textarea>
+	     	</td>
+	     </tr>
+	      <tr>
+	     	<td>问题解决状态：</td>
+	     	<td>
+	     	<select name="" id="status">
+	     		<option value="0">跟踪中</option>
+	     		<option value="1">关闭</option>
+	     		<option value="2">暂停</option>
+	     	</select>
+	     	</td>
+	     </tr>
+	      <tr>
+	     	<td>问题解决日期：</td>
+	     	<td><input type="date"></td>
+	     </tr>
+	     <tr>
+	     	<td>问题更新日期：</td>
+	     	<td><input type="date"></td>
+	     </tr>
+
+       </table>
+
+       <!-- submit -->
+       <button>提交</button>
+    
+    	
+    </form>
+    	
+    </body>
+</html>
